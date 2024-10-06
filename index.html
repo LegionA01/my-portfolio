@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/17d4cfd3be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+                <!--========== navbar ============-->
+    <div id="header">
+    <!-- <img id="background-img" src="images/myslf.png" alt="background-img"> -->
+
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Ethical Hacker</p>
+                <h1>Hi, my username is <br><span>knightL3gi0n</span>.<br>I'm an Ethical Hacker,<br>a CTF Player and<br>a Bug Bounty Hunter.</h1>
+                <p>I love hunting down bugs in web applications.</p>
+            </div>
+        </div>
+     </div>
+
+    <!-- ================= About Section=================== -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/professional.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm an Ethical Hacker, passionate CTF Player, and active Bug Bounty Hunter. With a focus on identifying vulnerabilities and enhancing system security, I excel in solving real-world cybersecurity challenges. My expertise is built through hands-on experience in web application security, penetration testing, and vulnerability analysis.
+
+                        Driven by curiosity and a dedication to continuous learning, I aim to contribute to making the digital world a safer place, while constantly honing my skills through hacking competitions and bug bounty programs.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Ethical Hacker</span><br>Skilled in web application security and vulnerability assessment, using tools like Burp Suite and OWASP ZAP to identify and mitigate risks</li>
+                            <li><span>CTF Player</span><br>An avid CTF player, I enjoy participating in Capture The Flag competitions, which challenge my problem-solving abilities and sharpen my technical skills across various cybersecurity domains.</li>
+                            <li><span>Bug Bounty Hunter</span><br>Actively learning the ropes of Bug Bounty Hunting by discovering and responsibly disclosing vulnerabilities.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Position: Cyber Security Analyst</span><br>Company: Center for Cyber Security Studies & Research</li>
+                            <li><span>Position: Cyber Security and Digital Forensics Intern</span><br>Company: Cyber Secured India</li>
+                            <li><span>Position: Cybersecurity Intern</span><br>Company: Hacktify Cyber Security</li>
+                            <li><span>Position: Pentesting Intern</span><br>Company: CFSS Cyber & Forensics Security Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Present</span><br>B.Tech in Information Technology from MMMUT, Gorakhpur.</li>
+                            <li><span>Pre-University</span><br>Pursued a Pre-University course in Physics, Chemistry, and Mathematics (PCM) at College of Commerce, Arts and Science, Patna.</li>
+                            <li><span>Matriculation</span><br>Completed high school at St. Xavier's High School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================== Services ======================= -->
+    <div id="Services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-masks-theater"></i>
+                    <h2>Ethical Hacking</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, dolor aliquam iste fugit ullam sapiente possimus blanditiis consequuntur vero quia. Cumque blanditiis qui eveniet nobis omnis perferendis error labore laborum.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Application Penetration Testing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, dolor aliquam iste fugit ullam sapiente possimus blanditiis consequuntur vero quia. Cumque blanditiis qui eveniet nobis omnis perferendis error labore laborum.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-bug-slash"></i>
+                    <h2>Bug Bounty</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, dolor aliquam iste fugit ullam sapiente possimus blanditiis consequuntur vero quia. Cumque blanditiis qui eveniet nobis omnis perferendis error labore laborum.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, dolor aliquam iste fugit ullam sapiente possimus blanditiis consequuntur vero quia. Cumque blanditiis qui eveniet nobis omnis perferendis error labore laborum.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- =================== Portfolio ===================== -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>System Hacking</h3>
+                        <p>Learn the art to break into any system! Register yourself.</p>
+                        <a href="https://github.com/LegionA01" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>System Hacking</h3>
+                        <p>Learn the art to break into any system! Register yourself.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>System Hacking</h3>
+                        <p>Learn the art to break into any system! Register yourself.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>System Hacking</h3>
+                        <p>Learn the art to break into any system! Register yourself.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- =================== Contact ======================= -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/b1x4u" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/b1x4u" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://x.com/b1x4u" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/anand-kumar-5187b0213/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-resume.pdf" download class="btn btn-2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 knightL3gi0n. All rights reserved. Made with love <i class="fa-solid fa-heart"></i></p>
+            </div>
+        </div>
+    </div>  
+    
+
+
+
+
+    <!-- ==================== js Script ==================== -->
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbycM-iQ_rXq28pT3uRC90pp3Q_NYuIxrqCnrNfb0HWXsA545g0KCfxcIY1oUf5rzp2i/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+  
+        form.addEventListener('submit', e => {
+
+           e.preventDefault()
+           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!";
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 4000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+  
+
+
+</body>
+</html>
